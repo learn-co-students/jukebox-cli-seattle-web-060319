@@ -46,9 +46,9 @@ input = gets.chomp
   if input.downcase == "help"
     help
   elsif input.downcase == "list"
-    list
+    list(songs)
   elsif input.downcase == "songs"
-    songs
+    play(songs)
   elsif input.downcase == "exit"
     exit_jukebox
   else
